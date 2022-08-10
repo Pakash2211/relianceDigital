@@ -1,0 +1,163 @@
+* {
+    font-family: Roboto,"system-ui",sans-serif;
+}
+.left {
+    width: 40%;
+}
+
+.flex1 {
+    display: flex;
+}
+
+.flex2 {
+    display: flex;
+    gap: 2  0px;
+}
+
+#bigImage > img{
+    width: 60%;
+    padding-left: 70px;
+}
+
+#threeImages > img {
+    width: 20%;
+    padding-left: 50px;
+}
+
+
+.static > h4{
+    margin-left: 18px;
+}
+
+h4 {
+    color: #333;
+}
+
+
+li {
+    font-size: 13px;
+    line-height: 1.7em;
+    font-weight: light;
+}
+
+span {
+    color: #287ec2;
+    cursor: pointer;
+}
+
+#price > p {
+    line-height: 1.2em;
+}
+
+.save {
+    color: #457351;
+    font-weight: bold;
+}
+
+#productName {
+    color: rgb(35, 17, 204);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.flex3 {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+#priceDeal {
+    padding-top:9px;
+}
+
+#deal {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003380;
+    margin-left: 5px;
+}
+
+#offer{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+#mrp {
+    text-decoration: line-through;
+    margin-left: 5px;
+
+}
+
+#displayPincode{
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 10px;
+    position: relative;
+}
+
+#displayPincode input{
+    width:280px;
+    height: 44px;
+    border-color: #003380;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+#displayPincode label{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    color: #0c5acf;
+    font-size: 15px;
+    padding: 0 5px;
+    background-color: white;
+}
+
+#cartBuy{
+    display: flex;
+    padding: 10px;
+}
+
+#addToCartDetail {
+    background-color: red;
+    height: 24px;
+    width: 144px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#addToCartDetail:hover {
+    background-color: #003380;
+    cursor: pointer;
+}
+
+#buyNowDetail {
+    height: 24px;
+    width: 144px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin:0,10px;
+    background-color: #fc6027;
+    cursor: pointer;
+}
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: -15px;
+}

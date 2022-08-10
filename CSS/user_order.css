@@ -1,0 +1,42 @@
+#MY_oder_location{
+    color: blue;
+    font-weight: 700;
+    font-size: 17px;
+}
+#NO_Oder_found{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#NO_Oder_found>a{
+    color: white;
+    background-color: #003380;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#user_order_grid>div{
+     display: flex;
+     /* grid-template-columns: repeat(3,1fr); */
+     gap: 10px;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     border-radius: 10px;
+     margin: 5px;
+}
+#user_order_grid>div img{
+    width: 10%;
+}
+#user_order_grid>div h4{
+    width: 50%;
+}
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: -14px;
+}
+
+

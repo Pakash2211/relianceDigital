@@ -1,0 +1,94 @@
+*,body{
+    margin: 0;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+#hp13{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hp13>.first{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #003380;
+    color: white;
+    width: 100%;
+}
+#hp13>.first>.info>h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#hp13>.first>.info>p{
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#hp13>.second{
+    padding-top: 10;
+    display: flex;
+    /* width: 70%; */
+    /* justify-content: space-around; */
+    background-color: #003380;
+    color: white;
+    width: 100%;
+}
+#hp13>.second>.one{
+    margin-left: 83px;
+}
+#hp13>.second>.two{
+    margin-left: 250px;
+    margin-bottom: 30px;
+}
+#hp13>.second>.one>img{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 18px;
+    cursor: pointer;
+}
+#hp13>.second>.two>img{
+    margin-top: 10px;
+    height: 42px;
+    cursor: pointer;
+}
+#hp13>.third{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 30px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    /* width: 90%; */
+    background-color: #0a244a;
+}
+#hp13>.third>.dummy{
+    width: 90%;
+}
+#hp13>.third>.dummy>h3{
+    font-size: small;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+#hp13>.third>.dummy>p{
+    font-size: small;
+}
+#hp13>.fourth{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    background-color: #0a244a;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}

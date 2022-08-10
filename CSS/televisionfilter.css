@@ -1,0 +1,521 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+
+
+
+/* <--------------------televison part start--------------------> */
+
+/* <-------------animation--------------> */
+.tel_animation{
+    width: 100%;
+}
+.tel_img{
+    width:100%;
+}
+
+
+
+/* <------------------- after animation telepart---------------> */
+
+#tel_allshow{
+ margin-top: 30px;
+ width: 100%;
+ border: 2px solid rgb(121, 119, 119);
+ display: grid;
+ grid-template-columns: 18% 82%;
+
+}
+/* <-----------------te...filter part-------------> */
+.tel_allshow_filter{
+
+    border-left: 2px solid rgb(121, 119, 119);
+    border-right: 2px solid rgb(121, 119, 119);
+    border-bottom: 2px solid rgb(121, 119, 119);
+}
+
+
+/* <------------- tele shower part-------------> */
+/* .tel_allshow_detail{
+border: 2px solid blue;
+} */
+.tel_allshow_uppar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px 20px 12px;
+    width: 100%;
+}
+
+.tel_filter_div{
+  border: 2px solid rgba(24, 23, 23, 0.904);
+  display: flex;
+  padding: 2px 4px;
+  align-items: center;
+}
+.tel_selfilter{
+    padding: 8px 15px 8px 8px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+#all_teldetails{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5px 13px 5px 0px;
+}
+#all_teldetails > div > div > img{
+    width: 180px;
+    height: 180px;
+    padding-bottom: 20px;
+}
+#all_teldetails > div {
+    padding: 13px 0px 0px 12px;
+}
+#all_teldetails > div > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(222, 216, 216);
+    padding: 20px 10px 10px  10px;
+    cursor: pointer;
+   
+}
+
+#all_teldetails > div > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+
+
+
+#all_teldetails > div > div>div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 15px 0px;
+    align-items: center;
+}
+#all_teldetails > div > div>#price>p:first-child{
+    color:rgb(0, 51, 128);
+    font-weight: 600;
+}
+#all_teldetails > div > div>#price>p:nth-child(2){
+color:rgb(102, 102, 102);
+text-decoration: line-through;
+}
+#all_teldetails > div > div>#price>p:nth-child(3){
+    color:rgb(67, 160, 71);
+    font-size: 14px;
+    font-weight: 600;
+ 
+}
+#all_teldetails > div > div>p{
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 20px;
+    overflow: hidden;
+    color:rgb(0, 51, 128);
+    font-size: 17px;
+
+}
+#all_teldetails > div > div>p:hover{
+    color:red;
+}
+#price+div{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* font-weight: 600; */
+
+}
+#price+div>p{
+    color:rgb(67, 160, 71);
+    border: 2px solid rgb(67, 160, 71);
+    padding: 2px 4px;
+    border-radius: 25px;
+    background-color: rgb(226, 245, 229);
+}
+ 
+#all_teldetails > div > div + div {
+    border: 1px solid rgb(222, 216, 216);
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+#all_teldetails > div > div + div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:rgb(102, 102, 102);
+}
+#all_teldetails > div > div + div div>p:first-child{
+    color: rgb(226, 226, 237);
+}
+
+#all_teldetails > div > div + div div:first-child >p:nth-child(2){
+    margin-left: -16px;
+
+}
+#all_teldetails > div > div + div div:nth-child(2) >p:nth-child(2){
+    margin-left: -8px;
+}
+#all_teldetails > div > div + div div:nth-child(2){
+    border-left: 1px solid rgb(222, 216, 216) ;
+    cursor: pointer;
+}
+
+
+
+
+/* <-----------filter part----------> */
+
+.tel_allshow_filter{
+   padding: 10px 0px;
+}
+.filter_title{
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    margin: 10px 0;
+    padding-bottom: 8px;
+   padding-left: 20px;
+    font-size: 20px;
+    color: #333333;
+}
+.filter_availability{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.filter_list{
+    list-style-type: none;
+}
+.filter_list > li{
+    display: flex;
+    padding-bottom: 18px;
+    
+}
+.filter_list > li > p{
+    font-size: 14px;
+    color: #333333;
+}
+.filter_checkbox{
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+    outline: none;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: none;
+}
+.filter_common_title{
+    color: #4b4b4a;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 14px 0;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.filter_price{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px 20px 20px;
+}
+#slider{
+    border:2px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    height: 12px;
+}
+.filter_brand{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.filter_brand_upper1{
+    display: flex;
+    /* display: none; */
+    justify-content:space-between;
+}
+.brand_search_icon{
+    cursor: pointer;
+}
+.filter_brand_upper2{
+    /* display: flex; */
+    display: none;
+    margin: 14px 0;
+  
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 4px 1px 4px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+.search_brand{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+.brand_hidden,.brand_more,.seemore_discount,.seeless_discount,
+.seeless_feature,.seemore_feature,.seemore_tvops,.seeless_tvops,.seemore_HDMI,.seeless_HDMI,.seemore_dtype,.seeless_dtype{
+    color: blue;
+    cursor: pointer;
+    padding: 5px 0px 30px 0px;
+}
+.hidden_brand{
+    display:none;
+}
+
+/* <--------discount----------> */
+.hidden_discount{
+    display: none;
+}
+.filter_discountper{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+/* <--------feature---> */
+
+.filter_feature{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_feature{
+    display: none;
+}
+.feature_view{
+    display: none;
+}
+.feature_down{
+    transition: transform 0.5s;
+}
+/* <----tvops---> */
+
+
+.filter_tvops{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_tvops{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_tvops{
+    display: none;
+}
+.tvops_view{
+    display: none;
+}
+.tvops_down{
+    transition: transform 0.5s;
+}
+
+
+/* <------------no of HDMI------> */
+
+.filter_HDMI{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_HDMI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_HDMI{
+    display: none;
+}
+.HDMI_view{
+    display: none;
+}
+.HDMI_down{
+    transition: transform 0.5s;
+}
+
+/* <------------------no of USB----------------> */
+.filter_noUSB{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_noUSB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noUSB_view{
+    display: none;
+}
+.noUSB_down{
+    transition: transform 0.5s;
+}
+
+/* <------------------end no of USB-----------> */
+
+/* <--------display tech-------> */
+.filter_tech{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech_view{
+    display: none;
+}
+.tech_down{
+    transition: transform 0.5s;
+}
+/* <------display tech end------> */
+
+/* <------------------display type-----------> */
+.filter_dtype{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_dtype{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_dtype{
+    display: none;
+}
+.dtype_view{
+    display: none;
+}
+.dtype_down{
+    transition: transform 0.5s;
+}
+
+
+/* <---------------display type end--------------> */
+
+/* <--------------------display size------------------> */
+
+.filter_size{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size_view{
+    display: none;
+}
+.size_down{
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+/* <---------------------------display size end---------------> */
+
+
+/* <-------------information part-----------> */
+#all_information{
+   padding: 10px 0px;
+}
+.all_infor_title{
+    padding: 10px 13px;
+    color:black;
+    font-weight: 500;
+}
+.all_info_detail1,.all_info_detail2{
+    font-size: 15px;
+    color: #333333;
+    padding: 10px 13px;
+    text-align: justify;
+}
+
+.all_info_dift{
+    padding: 25px 13px  5px 13px;
+    color:black;
+    font-weight: 600;
+}
+.all_infor_title1{
+    padding: 5px 13px;
+    color:black;
+    font-weight: 500;
+}
+.all_info_detail3{
+    font-size: 15px;
+    color: #333333;
+    padding: 8px 13px;
+    text-align: justify;
+}
+.all_infor_title2{
+    color: rgb(2, 2, 143);
+    padding: 5px 13px;
+    font-weight: 500;
+}
+
+#page_number{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #4b4b4a;
+    border-bottom: 2px solid #4b4b4a;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+
+}
+#page_number > p{
+    margin-left: 8px;
+    font-weight: 600;
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#page_number > p:hover{
+    color: white;
+    background-color: rgb(4, 4, 236);
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}

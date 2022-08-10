@@ -1,0 +1,668 @@
+/* navbar and footer css index.html-------------------------*/
+*{
+    margin: 0%;
+}
+#cartSection>a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    /* margin-bottom: 60px; */
+}
+#cameraSection>a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* margin-top: 90px; */
+    margin-right: 100px;
+}
+#homePageBody{
+    height: 1000px;
+    width: auto;
+    background-color: white;
+}
+#footerMain{
+    height: 180px;
+    width: auto;
+    background-color: navy;
+}
+
+/* camera.html - css  -------------------------------*/
+#cameraPageBody{
+    height: 2300px;
+    width: auto;
+    background-color: white;
+}
+#filterDisplay{
+    display:flex;
+    width: auto;
+    height: 100%;
+}
+#filter{
+    width: 15%;
+    height: 100%;
+    border: 1px solid #cecece;
+}
+#display{
+    width: 85%;
+    height: 100%;
+    max-height: auto;
+    border: 1px solid #E5E5E5;
+}
+#filterTitle,#displayTitle{
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    border: 1px solid #E5E5E5;
+    
+}
+
+/* camera.html -> inside id="displayCameras" ->css for each camera elem  ------------*/
+#displayCameras{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 25px;
+    column-gap: 5px;
+    margin: 15px auto 15px;
+
+}
+#cameraBox{
+    height: 420px;
+    width: 260px;
+    border: 1px solid #E5E5E5;
+    padding: 10px 12px 0px 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+#cameraBox:hover{
+    box-shadow: rgba(1,1,1,0.15) 1px 1px 10px 0px;
+    cursor: pointer;
+}
+#imgNamePrizeBox{
+    height: 380px;
+    width: 100%;
+    /* border: 1px solid green; */
+
+}
+#imgNamePrizeBox>img{
+   height: 280px;
+   width:260px;
+   margin: 0px auto 5px;
+   /* border: 1px solid rgb(0, 30, 128); */
+
+}
+#cameraName{
+    font-size: 15px;
+    height:40px;
+    font-family: system-ui,'Segoe UI', Roboto, sans-serif;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+
+}
+#cameraName:hover{
+    color: red;
+}
+#priceBox{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 35px;
+}
+#priceBox>p{
+    width: 35%;
+    height: 100%;
+    /* margin-bottom: 8px; */
+    margin-top: 5px;
+}
+#offerPrize{
+    color: navy;
+    font-size: 18px;
+    font-weight: bold;
+}
+#mrp{
+    color: grey;
+}
+#wishBox{
+    display: flex;
+    height: 40px;
+    /* position: absolute; */
+    /* z-index: +100px; */
+    /* border: 1px solid #E5E5E5; */
+    /* padding: 0px 20px 0px 20px; */
+}
+#compare{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    /* text-align: center; */
+    /* padding: 10px 42px 11px 42px ; */
+    /* margin-left: -10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#wishlist{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    /* text-align: center; */
+    /* padding: 8px 42px 0px 41px ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* cameraDetail.html- css single product css  */
+#displayAll{
+    display: flex;
+    width: 100%;
+    height:auto;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 15px;
+    padding: 15px 15px;
+}
+#displayImg{
+    width: 630px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#displayImg>img{
+    margin-top: 20px;
+}
+#displayName{
+    height: 135px;
+    width: 870px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#idTag{
+    margin: 10px 0 15px 5px;
+}
+#nameTag{
+    margin: 0 0 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#displayDetailMrp{
+    display: flex;
+}
+#displayDetail{
+    height: fit-content;
+    width: 436px;
+    padding: 10px 25px 20px 5px;
+    border-right: 1px solid #E5E5E5;
+}
+#displayMrp{
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 10px;
+}
+#displayPincode{
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 10px;
+    position: relative;
+}
+#displayPincode input{
+    width:280px;
+    height: 44px;
+    border-color: #003380;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+#displayPincode label{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    color: #0c5acf;
+    font-size: 15px;
+    padding: 0 5px;
+    background-color: white;
+}
+
+#cartBuy{
+    display: flex;
+    padding: 10px;
+}
+#addToCartCamDetail{
+    background-color: red;
+    height: 24px;
+    width: 144px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#addToCartCamDetail:hover{
+    background-color: #003380;
+    cursor: pointer;
+}
+#buyNowCamDetail{
+ 
+    height: 24px;
+    width: 144px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin:0,10px;
+    background-color: #fc6027;
+    cursor: pointer;
+}
+/* ----cart.html css starts from here---------------- */
+#cartPageBody{
+    height: auto;
+    width:max-content;
+    display:flex;
+    padding: 10px 10px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+#listingDiv{
+    height: auto;
+    width: 910px;
+    /* border:1px solid green; */
+    margin: 0px 15px;
+
+}
+
+#totalInCart{
+    height: 40px;
+    width: 910px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#myCart{
+   margin-left: 15px;
+   font-weight: bold;
+}
+#sippingTo{
+margin-right: 15px;
+}
+#totalInCart 
+#listCartProducts{
+    height: auto;
+    width: 910;
+    margin: auto;
+    padding: 0 16px 0 16px;
+}
+#checkoutAmountDiv{
+    width: 454px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+#checkout{
+    height: 36px;
+    width: 422px;
+    border: 1px soild #161616;
+    background-color: #D32F2F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#couponAmountDiv{
+    height: 220px;
+    width: 412px;
+    border: 1px solid #E0E0E1;
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin: auto;
+}
+#coupon{
+    border-bottom: 1px solid #E0E0E1;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+#coupon input{
+    height: 36px;
+    width: 388px;
+    border: 1px solid #E0E0E1;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+#coupon label{
+    position: absolute;
+    color: #0c5acf;
+    height: 34px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #E0E0E1;
+    border-left: 2.5px solid #0c5acf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 12px;
+    cursor: pointer;
+    background-color: white;
+}
+#priceDetail,h3,p{
+   margin-bottom: 15px;
+}
+#totalPriceDiv{
+    display:flex;
+    justify-content: space-between;
+}
+#priceDetail>p{
+    display: inline-block;
+    margin-right: 264px;
+    
+}
+#amountPayable{
+    display: flex;
+    justify-content: space-between;
+}
+#checkoutLine{
+    margin-bottom:10px ;
+    margin-top: -15px;
+    opacity:35%;
+}
+#totalPrizeCart{
+    color: #003380;
+}
+#deliveryPrizeCart{
+    color:rgb(126, 202, 12);
+}
+#amountPayable>span{
+    font-size: 18px;
+    font-weight: bold;
+}
+#checkoutAmountDiv>p{
+    color:#666666;
+    font-weight: bold;
+    font-size: 14px;
+    margin: auto;
+}
+/* css for same cart.html but for each product card */
+
+#productDetailDiv{
+    height: auto;
+    width: 866px;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #E0E0E1;
+}
+#imgCounterDiv{
+    height: 178px;
+    width: 142px;
+    /* padding: 10px 10px; */
+    /* border:1px solid red */
+
+}
+#imgCounterDiv>img{
+    width: 120px;
+    height: 114px;
+    margin: 10px 10px 10px 10px;
+    /* border:1px solid red; */
+}
+#counterDiv{
+    height: 30px;
+    width: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* border:1px solid red */
+}
+#counterDiv>div{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #E0E0E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #cccccc;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: auto;
+}
+#nameMrpDiv{
+    width: 703px;
+    padding: 5px 5px;
+    /* border:1px dashed red; */
+    display: flex;
+}
+#itemName{
+    color: #003380;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+#mrpDeliveryDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    
+}
+#offerPriceCart{
+    margin-top: 10px;
+}
+#mrpDeliveryDiv>p:nth-child(4){
+    color: #15967C;
+    font-weight: bold;
+}
+#mrpDeliveryDiv>p:nth-child(5){
+    color: #003380;
+    font-weight: bold;
+}
+#mrpDeliveryDiv>p:nth-child(6){
+    width: 280px;
+    color: #003380;
+    font-weight: bold;
+}
+#mrpCart{
+    text-decoration: line-through;
+}
+
+#productRemoveDiv{
+    height: 42px;
+    width: 886px;
+    /* border: 1px solid #E0E0E1; */
+    display: flex;
+    margin: 0px auto 20px;
+}
+#removeProduct,#wishlistProduct{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E0E0E1;
+    color: #0c5acf;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/* CHECKOUT.HTML ---CSS ---id="deliveryMethodBox --------*/
+
+#checkoutPageBody{
+    height: 1500px;
+}
+#shipping_picode_clickDiv{
+    display: flex;
+}
+#viewTotalAmont_ProceedToPaymentDiv{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+#divContainAmount{
+   margin: 10px 25px 10px 10px;
+}
+#proceedToPaymentBtn{
+    height: 24px;
+    width: 200px;
+    background-color: #D32F2F;
+    border: 1px solid #E42529;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px auto 10px;
+}
+#checkoutCartbody{
+    background-color: #F5F7F7;
+    border: 1px solid black;
+}
+#deliveryMethodBox{
+    background-color: rgb(246, 237, 237);
+    width:90%;
+    margin: auto;
+    border-bottom: 2px solid rgb(22, 22, 22);
+    padding: 10px 5px;
+    cursor: pointer;
+}
+#shipping_pincode_clickDiv>h4{
+    display: flex;
+    height: 40px;
+    width: 140px;
+    border-bottom: 2px solid #0c5acf;
+}
+#displayBuyingProductDiv{
+    /* border: 2px solid red; */
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px 0px 5px;
+}
+#viewTotalAmount{
+    margin-top: 20px;
+    display: none;
+}
+#orderDetailDiv{
+    font-weight: 600px;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+
+    background-color: rgb(246, 237, 237);
+
+}
+#viewTotalAmont_ProceedToPaymentDiv{
+    display: none;
+}
+#shipping_picode_clickDiv{
+    display: none;
+}
+#paySecurely{
+    width: 1200px;
+    background-color: white;
+    /* padding:5px 5px; */
+    margin: 20px auto;
+    border-radius: 5px;
+}
+#paySecurely>h3{
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    /* border: 1px solid red; */
+    padding: 10px 15px;
+}
+#upiParentDiv{
+    display: flex;
+}
+#upi>div{
+    border: 1px solid #DCDCDC;
+    padding :20 10 20 40;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+
+}
+#upiPayment{
+    height: 28px;
+    color: #003380;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 8px 15px 0px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#upiDetail>p{
+  color: #003380;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 15px 10px;
+}
+#checkbox_terms{
+    display: flex;
+}
+#checkbox{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#terms{
+  color: #003380;
+  font-size: 15px;
+}
+#payAmountBtn{
+    height: 24px;
+    width: 200px;
+    background-color: #D32F2F;
+    border: 1px solid #E42529;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    cursor: pointer;
+    margin: 15px 15px 10px 15px;
+}
+#upi>div:hover{
+    color: #0c5acf;
+    font-weight: bold;
+}
+#upi>div:first-child{
+    color: #0c5acf;
+    font-weight: bold;
+}

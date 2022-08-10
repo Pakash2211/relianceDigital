@@ -1,0 +1,163 @@
+#signup_div{
+    width: 100%;
+    padding: 32px 0px;
+}
+#signup_register,.signup_register_heading{
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 17px;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+#mainregisteration_div label{
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+.animation_lable{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+#mainsighun_llogindiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#mainsighun_llogindiv>div:first-child{
+   grid-column: 1/3;
+   /* border: 1px solid black; */
+}
+#mainsighun_llogindiv>div:last-child{
+    grid-column: 3/4;
+}
+#mainsighun_llogindiv>div:first-child>img{
+    width: 100%;
+}
+#main_signup_login_input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#main_signup_login_input input,#mainregisteration_div input{
+    padding: 8px 16px;
+    margin-top: 28px;
+    font-weight: 600;
+    font-family: Roboto,"system-ui",sans-serif;
+    font-size: 17px;
+    outline: none;
+    border-radius: 5px;
+    width: 90%;
+    z-index: 4;
+}
+#mainregisteration_div input{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#main_signup_login_input button,#mainregisteration_div button{
+    margin-top: 28px;
+    padding: 0px 12px;
+    font-family: inherit;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 37, 41);
+    border: 1px solid rgb(228, 37, 41);
+    margin-bottom: 48px;
+}
+#main_signup_login_input button:hover,#mainregisteration_div button:hover{
+    background-color: rgb(152, 17, 19);
+    border: 1px solid rgb(152, 17, 19);
+}
+#main_signup_login_input_param{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bs6{
+    display: none;
+}
+.input_animation{
+    position: relative;
+    z-index: 1;
+    /* background: transparent; */
+
+}
+input{
+    border: 0.5px solid rgb(51, 77, 219);
+    z-index: 2;
+}
+input:focus{
+    border: 2px solid blue;
+}
+.animation_lable{
+    position: absolute;
+    z-index: -1;
+    left: 13px;
+    top: 35px;
+    cursor: text;
+    z-index: 2;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+.animationInpu:focus{
+    border: 1px solid blue;
+}
+.animationInpu:focus~.animation_lable,
+.animationInpu:not(:placeholder-shown).animationInpu:not(:focus)~.animation_lable{
+    top: 17px;
+    font-size: 14px;
+    background-color: white;
+    padding: 0px 5px;
+}
+#mainregisteration_div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#mainregisteration_div>#form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 10px;
+}
+#mainregisteration_div button{
+    width: 95%;
+}
+#sighnupOtpSubmitButton,.signupotp{
+    display: none;
+}
+#mainregisteration_div{   
+    display: none;
+}
+@media only screen and (max-width: 857px) {
+    #mainsighun_llogindiv{
+        display: flex;
+        flex-direction: column;
+    }
+    #mainregisteration_div{
+        width: 80%;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    #mainregisteration_div{
+        width: 100%;
+    }
+    
+}

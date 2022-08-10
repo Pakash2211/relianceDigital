@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Television</title>
+  <link rel="Stylesheet" href="../CSS/televisionfilter.css" />
+  <link rel="icon" type="image/x-icon" href="https://www.reliancedigital.in//build/client/images/apple-touch-icon.png">
+  <script src="https://kit.fontawesome.com/eaafce657d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/navbaar.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+
+<body>
+  <div id="top_find_store_div"></div>
+  <div id="navbaar_div"></div>
+  <div id="television_part">
+    <div class="tel_animation">
+      <img src="" class="tel_img" />
+    </div>
+    <div id="tel_allshow">
+      <div class="tel_allshow_filter">
+        <h4 class="filter_title">FILTER</h4>
+        <div class="filter_price">
+          <h4 class="filter_common_title">Price</h4>
+          <div id="slider"></div>
+          <div class="filter_range"></div>
+          <div class="filter_minmax"></div>
+        </div>
+        <div class="filter_availability">
+          <h4 class="filter_common_title">Availability</h4>
+          <ul class="filter_list">
+            <li>
+              <input type="checkbox" value="avl" class="filter_checkbox" />
+              <p>Exclude out of Stock</p>
+            </li>
+          </ul>
+        </div>
+        <div class="filter_brand">
+          <div class="filter_brand_upper1">
+            <h4 class="filter_common_title">Brand</h4>
+            <img src="../televisionImg/search_filter.svg" class="brand_search_icon" alt="searchicon" />
+          </div>
+          <div class="filter_brand_upper2">
+            <input type="search" class="search_brand" placeholder="Search.." />
+            <img src="../televisionImg/cancel_black_24dp.svg" class="brand_close_icon" alt="closeicon" />
+          </div>
+          <ul class="filter_list">
+            <li>
+              <input type="checkbox" value="Samsung" class="filter_checkbox" name="brand" />
+              <p>Samsung</p>
+            </li>
+            <li>
+              <input type="checkbox" value="LG" class="filter_checkbox" name="brand" />
+              <p>LG</p>
+            </li>
+            <li>
+              <input type="checkbox" value="Sony" class="filter_checkbox" name="brand" />
+              <p>Sony</p>
+            </li>
+            <li>
+              <input type="checkbox" value="TCL" class="filter_checkbox" name="brand" />
+              <p>TCL</p>
+            </li>
+          </ul>
+          <p class="brand_more">See more</p>
+          <div class="hidden_brand">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="redmi" class="filter_checkbox" name="brand" />
+                <p>Xiaomi</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Oneplus" class="filter_checkbox" name="brand" />
+                <p>One Plus</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Realme" class="filter_checkbox" name="brand" />
+                <p>Real me</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Toshiba" class="filter_checkbox" name="brand" />
+                <p>Toshiba</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Kodak" class="filter_checkbox" name="brand" />
+                <p>Kodak</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Onida" class="filter_checkbox" name="brand" />
+                <p>Onida</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Karbonn" class="filter_checkbox" name="brand" />
+                <p>Karbonn</p>
+              </li>
+            </ul>
+            <p class="brand_hidden">See less</p>
+          </div>
+        </div>
+        <div class="filter_discountper">
+          <h4 class="filter_common_title">Discount Percent</h4>
+          <ul class="filter_list">
+            <li>
+              <input type="checkbox" value="_gte=60" class="filter_checkbox" name="discount" />
+              <p>60% or more</p>
+            </li>
+            <li>
+              <input type="checkbox" value="_gte=40&discount_lte=60" class="filter_checkbox" name="discount" />
+              <p>40% to 60%</p>
+            </li>
+            <li>
+              <input type="checkbox" value="_gte=30&discount_lte=40" class="filter_checkbox" name="discount" />
+              <p>30% to 40%</p>
+            </li>
+            <li>
+              <input type="checkbox" value="_gte=20&discount_lte=30" class="filter_checkbox" name="discount" />
+              <p>20% to 30%</p>
+            </li>
+          </ul>
+          <p class="seemore_discount">See more</p>
+          <div class="hidden_discount">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="_gte=10&discount_lte=20" class="filter_checkbox" name="discount" />
+                <p>10% to 20%</p>
+              </li>
+              <li>
+                <input type="checkbox" value="10" class="filter_checkbox" name="discount" />
+                <p>upto 10%</p>
+              </li>
+</ul>
+              <p class="seeless_discount">See less</p>
+          </div>
+        </div>
+        <div class="filter_feature">
+          <div class="click_feature">
+            <h4 class="filter_common_title">Features</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="feature_down">
+          </div>
+          <div class="feature_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="Wi-Fi" class="filter_checkbox" name="feature" />
+                <p>Wi-Fi</p>
+              </li>
+              <li>
+                <input type="checkbox" value="HDR" class="filter_checkbox" name="feature" />
+                <p>HDR</p>
+              </li>
+              <li>
+                <input type="checkbox" value="HDMI" class="filter_checkbox" name="feature" />
+                <p>HDMI ARC</p>
+              </li>
+              <li>
+                <input type="checkbox" value="ScheduleRecording" class="filter_checkbox" name="feature" />
+                <p>Schedule Recording</p>
+              </li>
+            </ul>
+            <p class="seemore_feature">See more</p>
+          </div>
+          <div class="hidden_feature">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="GestureControl" class="filter_checkbox" name="feature" />
+                <p>Gesture Control</p>
+              </li>
+              <li>
+                <input type="checkbox" value="3DTechnology" class="filter_checkbox" />
+                <p>3D Technology</p>
+              </li>
+            </ul>
+            <p class="seeless_feature">See less</p>
+          </div>
+
+        </div>
+
+        <div class="filter_tvops">
+          <div class="click_tvops">
+            <h4 class="filter_common_title">TV Operating System</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="tvops_down">
+          </div>
+          <div class="tvops_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="AndroidTV" class="filter_checkbox" name="tvops" />
+                <p>Android TV</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Tizen" class="filter_checkbox" name="tvops" />
+                <p>Tizen</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Linux" class="filter_checkbox" name="tvops" />
+                <p>Linux</p>
+              </li>
+            </ul>
+            <p class="seemore_tvops">See more</p>
+          </div>
+          <div class="hidden_tvops">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="VIDAA" class="filter_checkbox" name="tvops" />
+                <p>VIDAA</p>
+              </li>
+            </ul>
+            <p class="seeless_tvops">See less</p>
+          </div>
+
+        </div>
+        <div class="filter_HDMI">
+          <div class="click_HDMI">
+            <h4 class="filter_common_title">No of HDMI Ports</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="HDMI_down">
+          </div>
+          <div class="HDMI_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="4" class="filter_checkbox" name="HDMI" />
+                <p>4</p>
+              </li>
+              <li>
+                <input type="checkbox" value="3" class="filter_checkbox" name="HDMI" />
+                <p>3</p>
+              </li>
+              <li>
+                <input type="checkbox" value="2" class="filter_checkbox" name="HDMI" />
+                <p>2</p>
+              </li>
+            </ul>
+            <p class="seemore_HDMI">See more</p>
+          </div>
+          <div class="hidden_HDMI">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="1" class="filter_checkbox" name="HDMI" />
+                <p>1</p>
+              </li>
+            </ul>
+            <p class="seeless_HDMI">See less</p>
+          </div>
+        </div>
+        <div class="filter_noUSB">
+          <div class="click_noUSB">
+            <h4 class="filter_common_title">No of USB Ports</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="noUSB_down">
+          </div>
+          <div class="noUSB_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="3" class="filter_checkbox" name="USB" />
+                <p>3</p>
+              </li>
+              <li>
+                <input type="checkbox" value="2" class="filter_checkbox" name="USB" />
+                <p>2</p>
+              </li>
+              <li>
+                <input type="checkbox" value="1" class="filter_checkbox" name="USB" />
+                <p>1</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter_tech">
+          <div class="click_tech">
+            <h4 class="filter_common_title">Display Technology</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="tech_down">
+          </div>
+          <div class="tech_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="QLED" class="filter_checkbox" name="displayTech" />
+                <p>QLED</p>
+              </li>
+              <li>
+                <input type="checkbox" value="OLED" class="filter_checkbox" name="displayTech" />
+                <p>OLED</p>
+              </li>
+              <li>
+                <input type="checkbox" value="Nanocell" class="filter_checkbox" name="displayTech" />
+                <p>Nanocell</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter_dtype">
+          <div class="click_dtype">
+            <h4 class="filter_common_title">Display Type</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="dtype_down">
+          </div>
+          <div class="dtype_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="UltraHD(8K)" class="filter_checkbox" name="displayType" />
+                <p>Ultra HD (8K)</p>
+              </li>
+              <li>
+                <input type="checkbox" value="UltraHD(4K)" class="filter_checkbox" name="displayType" />
+                <p>Ultra HD (4K)</p>
+              </li>
+              <li>
+                <input type="checkbox" value="HDReady" class="filter_checkbox" name="displayType" />
+                <p>HD Ready</p>
+              </li>
+              <li>
+                <input type="checkbox" value="FullHD" class="filter_checkbox" name="displayType" />
+                <p>Full HD</p>
+              </li>
+            </ul>
+            <p class="seemore_dtype">See more</p>
+          </div>
+          <div class="hidden_dtype">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="HD" class="filter_checkbox" name="displayType" />
+                <p>HD</p>
+              </li>
+            </ul>
+            <p class="seeless_dtype">See less</p>
+          </div>
+        </div>
+        <div class="filter_size">
+          <div class="click_size">
+            <h4 class="filter_common_title">Screen Size (Diagonal)</h4>
+            <img src="../televisionImg/expand_more_black_24dp.svg" class="size_down">
+          </div>
+          <div class="size_view">
+            <ul class="filter_list">
+              <li>
+                <input type="checkbox" value="190cm" class="filter_checkbox" name="displaySize" />
+                <p>190 cm (75 inch)</p>
+              </li>
+              <li>
+                <input type="checkbox" value="189cm" class="filter_checkbox" name="displaySize" />
+                <p>189 cm (75 inch)</p>
+              </li>
+              <li>
+                <input type="checkbox" value="178cm" class="filter_checkbox" name="displaySize" />
+                <p>178 cm (70 inch)</p>
+              </li>
+              <li>
+                <input type="checkbox" value="177.8cm" class="filter_checkbox" name="displaySize" />
+                <p>177.8 cm (70 inch)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tel_allshow_detail">
+        <div class="tel_allshow_uppar">
+          <h2>TELEVISIONS</h2>
+          <div class="tel_filter_div">
+            <p>Sort by:</p>
+            <select name="telfilter" class="tel_selfilter">
+              <option value="rel">Relevance</option>
+              <option value="name">Name(A-Z)</option>
+              <option value="revname">Name(Z-A)</option>
+              <option value="ltoh">Price(Low-High)</option>
+              <option value="htol">Price(High-Low)</option>
+            </select>
+          </div>
+        </div>
+        <!--all the tv show-->
+        <div id="all_teldetails"> </div>
+        <div id="page_number">
+          <p><</p>
+          <p class="first_page">1</p>
+          <p class="sec_page">2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>6</p>
+          <p>></p>
+          
+        </div>
+        <div id="all_information">
+          <p class="all_infor_title">Shopping for a New TV with Latest TV Technology</p>
+          <p class="all_info_detail1">It’s hard to find a house without a television. It is that one inescapable entertainment electronic that is most commonly used by all age groups and a home somehow feels missing without one. You can watch video content across multiple subjects such as news, entertainment, education, music, culture, and sports.</p>
+          <p class="all_info_detail2">With more and more ways of watching television these days, there are newer versions of the all-rounder television, such as smart TV’s, android TV and the LCD’s have a newer upgrade in the form of LED TV.</p>
+
+          <p class="all_infor_title">Upgrade the Resolution - Buying a New TV</p>
+          <p class="all_info_detail1">Buying your first TV or upgrading to a better one has now become easier than you can imagine. You can<b> buy LED TV online </b>or <b>buy smart TV online </b> just as easily as buying clothes online. If you are in search of an upgrade or a new TV, a good android smart TV will be a great choice for the entire family. Not only everyone is able to enjoy it equally, but also make use of it for various purposes.</p>
+          <p class="all_info_detail2">A smart TV functions more like a computer, it runs various apps and offers high resolution video quality. Upgrading to a smart android TV will allow you to watch shows and movies without the need for cable services. You can also browse the internet, play games or access compatible data from your computer. With upgraded versions and stylish new models, it’s time you finally bring home a new television.</p>
+
+
+
+          <p class="all_infor_title">Different Types and Sizes in Televisions</p>
+          <p class="all_info_detail1">The world of televisions is looking better each day, with an array of high-end displays, in-built features and screen sizes. You can now watch your favorite shows on television sizes you didn’t even imagine could be possible. The easiest way to buy a tv is by size and screen type.</p>
+          <p class="all_info_detail2">You can<b>buy a 32 inch LED TV</b>, 40 inch to place in the bedroom, while a 50 inch or above 60 inch will look great in the living room. There are also several screen types available such as HD, Full HD, Ultra HD (4K), OLED, and QLED, based on their sharpness, color vibrancy, clarity and technology.</p>
+          <p class="all_info_detail2">It is very easy to <b> buy a high-performance TV online </b>today. All the specifications, details, customer reviews, unboxing techniques are mentioned on the web, including video clarity demos. Buy LED TV online, see which brand is coming out with latest designs,<b>check 40 inch LED TV price</b> or which is the sleekest TV available - all of this and more can now be checked online with trusted reviews.</p>
+
+        </div>
+        <div class="all_info_list">
+          <p class="all_info_dift">Find the Perfect Television within your Budget</p>
+          <p class="all_infor_title1"> 1. TV Under Rs. 15,000</p>
+          <p class="all_info_detail3">Perfect for today's modern home, you can get a sleek 32” LED Smart TV with HD video quality and features like voice recognition and video calling.</p>
+
+          <p class="all_infor_title1">2. TV Under Rs. 30,000</p>
+          <p class="all_info_detail3">Get home theatre-like experience with 32” to 50” Full HD LED TV along with AI Smart TV options with features like noise reduction, Chromecast Screen Sharing, and Wide Viewing Angle.</p>
+
+          <p class="all_infor_title1">3. TV Under Rs. 50,000</p>
+          <p class="all_info_detail3">Treat yourself to a fantastic visual experience with up to 55” Ultra HD 4K LED Smart TV, offering features like Built-in Set Top-Box, Quad core processor, Dolby Digital Plus audio, and data storage.</p>
+
+          <p class="all_infor_title1">4. TV Under Rs. 70,000</p>
+          <p class="all_info_detail3">Smarten your home by multiple degrees with up to 65” Ultra HD 4K LED Smart TV that offers screen mirroring feature, Auto channel search, compatibility with Amazon Echo and Google Assistant, and PurColor and HDR.</p>
+
+        </div>
+        <div class="all_info_list">
+          <p class="all_info_dift">Choose from Top Brand Online with Reliance Digital</p>
+          <p class="all_infor_title2">1. LG TV</p>
+          <p class="all_info_detail3">Revel into the world of endless and remarkable entertainment with amazing picture quality. LG brings to you Ultra HD Smart TV in sizes 24”, 32”, 43”, 49”, 50”, 55”, 65”, 75” and 77” between Rs. 14,490 to Rs.10,99,990.</p>
+
+          <p class="all_infor_title2">2. Panasonic TV</p>
+          <p class="all_info_detail3">Enjoy a stunning television viewing experience with Panasonic on their Ultra HD 4K LED Smart TV in sizes 32”, 40” and 43” between Rs. 23,880 to Rs. 50,400.</p>
+
+          <p class="all_infor_title2">3. Reconnect TV</p>
+          <p class="all_info_detail3">Crafted with great picture quality features and clarity control technology, Reconnect brings to you Full HD LED TV in sizes 24”, 32”, 40” and 43” between Rs. 12,990 to Rs. 31,990.</p>
+
+          <p class="all_infor_title2">4. Samsung TV</p>
+          <p class="all_info_detail3">The ultimate example of an intelligent and smart television, Samsung brings to you real life experience quality in Ultra HD 4K LED Smart TV in sizes 32”, 43”, 49”, 50”, 55”, 58”, 65”, 75” between Rs. 24,990 to Rs.10,99,990.</p>
+
+          <p class="all_infor_title2">5. Sony TV</p>
+          <p class="all_info_detail3">Get unbelievable resolution with Sony’s high color accuracy and wide viewing angles. Available in Ultra HD 4K LED Smart TV in sizes 32”, 43”, 49”, 50”, 55”, 58”, 65”, 75” between Rs. 14,990 to Rs.5,49,990.</p>
+
+          <p class="all_infor_title1">Best Sellers in Tv</p>
+          <p class="all_info_detail3">The boom of online shopping has brought us to buying electronics, home appliances, and even furniture on the web today.<b>TV online shopping </b>is like buying anything else on the internet, especially on a trusted platform like Reliance Digital. Explore the wide range of televisions from renowned brands like LG, Panasonic, Samsung, Sony, and more and buy<b> LED TV online</b> for your home and office with Reliance Digital. Check out the best sellers in TV:</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hp" id="hp13"> </div>
+</body>
+
+</html>
+<script src="../scripts/televisionfilter.js" type="module"></script>
+<script type="module" src="../scripts/header.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js" integrity="sha512-1mDhG//LAjM3pLXCJyaA+4c+h5qmMoTc7IuJyuNNPaakrWT9rVTxICK4tIizf7YwJsXgDC2JP74PGCc7qxLAHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

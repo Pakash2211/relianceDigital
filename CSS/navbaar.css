@@ -1,0 +1,370 @@
+*,body{
+    margin: 0;
+}
+#navbaar_div{
+    background-color: #e42529;
+    width: 100%;
+    z-index: 10;
+}
+#find_store_list,#headermaininfo{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px 16px;
+    z-index: 100;
+
+}
+#top_find_store_div{
+    width: 100%;
+    background: #e42529;
+}
+#find_store_list>li,#headermaininfo>li{
+    padding: 0px 8px;
+}
+#find_store_list a,#headermaininfo a{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto,"system-ui",sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+#find_store_list>li:nth-child(2),#headermaininfo>li:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#nav_serchbaar_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px 8px 48px;
+    align-items: center;
+
+}
+#main_serchbaar{
+    min-width: 200px;
+    width: 38%;
+    position: relative;
+}
+#main_serchbaar>input{
+    height: 36px;
+    outline: none;
+    padding: 0px 16px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+#main_serchbaar .fa-solid{
+    color: rgb(187,187,187);
+    position: absolute;
+    right: -10px;
+    bottom: 9px;
+    font-size: 20px;
+}
+#nav_serchbaar_div>a>img{
+    width: 150px;
+    height: 50px;
+}
+#ctegry_list,#navbaar_top_on_another_page{
+    background: #003380;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2%;
+    list-style: none;
+}
+#ctegry_list>li,#navbaar_top_on_another_page>li{
+    padding: 10px 0.6vw;
+}
+#ctegry_list a{
+    color: white;
+    font-family: Roboto,"system-ui",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+}
+#nav_mobiles,#nav_COMPUTERS,#nav_PERSONAL{
+    display: none;
+    gap: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 109px;
+    background-image: url("https://www.reliancedigital.in/medias/Mobiles-Tablet-Menu-Banners-04-01-2021-01.jpg?context=bWFzdGVyfGltYWdlc3wxMTkxOTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGM0L2gxNy85NTIwNDc1MzczNTk4LmpwZ3xjMmU0NzlmMWZjODQyMmFmNDZhMjA2NTUwZTVhNTI4ODcxMWVkZjM5YzgyNDY3YTE3ODU1OWM0NGQyY2E4MmVi");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 95%;
+    height: auto;
+    border-left: 1px solid rgb(137, 135, 135);
+    border-right: 1px solid rgb(137, 135, 135);
+    border-bottom: 1px solid rgb(137, 135, 135);
+}
+#nav_mobiles ul, #nav_TELEVISIONS ul ,
+#nav_HEADPHONES ul,#nav_APPLIANCES ul,
+#nav_COMPUTERS ul,#nav_CAMERAS ul,
+#nav_KITCHEN ul,#nav_PERSONAL ul,#nav_ACCESSORIES ul{
+    list-style: none;
+    margin: 10px 0px;
+}
+#nav_PERSONAL ul{
+    margin: 5px;
+}
+#nav_mobiles ul li,#nav_TELEVISIONS ul li,#nav_HEADPHONES ul li,
+#nav_APPLIANCES ul li, #nav_COMPUTERS ul li,
+#nav_CAMERAS ul li,#nav_KITCHEN ul li,
+#nav_PERSONAL ul li,#nav_ACCESSORIES ul li{
+    margin: 5px 0px;
+}
+#nav_PERSONAL ul li{
+    margin: 2px 0px;
+}
+#ctegry_list>li>div a{
+    font-size: 14px;
+    font-weight: 300;
+}
+#ctegry_list>li>div .nav_discription_heading>a{
+    font-size: 16px;
+    font-weight: 600;
+}
+#ctegry_list>li>div a:hover{
+    text-decoration: 1px solid white underline;
+}
+#nav_TELEVISIONS,#nav_HEADPHONES,#nav_APPLIANCES,#nav_CAMERAS,#nav_KITCHEN,#nav_ACCESSORIES{
+    display: none;
+    gap: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 109px;
+    left: 34px;
+    width: 95%;
+    height: auto;
+    background-color: #233362;
+    border-left: 1px solid rgb(137, 135, 135);
+    border-right: 1px solid rgb(137, 135, 135);
+    border-bottom: 1px solid rgb(137, 135, 135);
+}
+#nav_COMPUTERS{
+    background-image: url("https://www.reliancedigital.in/medias/Computers-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3wxMzI5NDF8aW1hZ2UvanBlZ3xpbWFnZXMvaDQzL2g1Ny85NDU1NTQ0Nzk1MTY2LmpwZ3w3YThhZWU1NGYwZjY4ODA2Yjg1N2MyNzk4MTNlN2RkNGUxMjE1NjI5ZGQyMzAzOTk2NTMxZGIxOWMzOGM1NTJl");
+    left: 34px;
+}
+#nav_PERSONAL{
+    background-image: url("https://www.reliancedigital.in/medias/Personal-Care-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3w2MTMxNnxpbWFnZS9qcGVnfGltYWdlcy9oZDUvaGI4Lzk0NTU1NDQ5OTE3NzQuanBnfDVlYjM3ZmQ0OWRhMGI0NmU2YjVmZDk1ZGE4Njc0MGJmNmQyMzEyMjNlMjI1MTJhMmU5MTVjNGFiMmU3N2M2YTE");
+    left: 34px;
+}
+h1{
+    margin: 50px;
+}
+#navbaar_div{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+#nav_cart_item{
+    position: relative;
+}
+#nav_cart_item_total{
+    position: absolute;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    left: 16px;
+    top: -13px;
+    padding: 0px 5px;
+    display: none;
+}
+#lishtshowbaar{
+    display: none;
+    background-color: #003380;
+    text-align: center;
+}
+#lishtshowbaar a{
+    color: white;
+   text-align: center;
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: 600;
+   font-family: Roboto,"system-ui",sans-serif;
+}
+#navbaar_top_on_another_page li{
+    color: white;
+    font-family: Roboto,"system-ui",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+#navbaar_top_on_another_page{
+    background-color: #e42529;
+    border-bottom: 0.5PX soliD white;
+    z-index: 15;
+}
+#home_page_user_name{
+    display: none;
+    color: white;
+}
+#navbaar_top_on_another_page>li:nth-child(even){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#nav_account_div_list{
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px;
+}
+#nav_account_div_list>li{
+    border-bottom: 1px dotted rgb(70, 69, 69);
+    padding: 10px;
+    border-radius: 5px;
+}
+#nav_account_div_list>li a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Roboto,"system-ui",sans-serif;
+}
+#triingle{
+    height: 0px;
+    width: 0px;
+    margin-left: 104px;
+    border-left: 17px solid transparent;
+    border-bottom: 17px solid white;
+    border-right: 17px solid transparent;
+}
+#home_page_user_name{
+    position: relative;
+}
+#nav_account_div{
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    z-index: 1;
+    right: -21px;
+    top: 19px;
+    display: none;
+}
+#home_page_user_name:hover #nav_account_div,#nav_account_div:hover{
+    display: block;
+}
+#nav_cart_item{
+    position: relative;
+}
+#nav_cart_div_first{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 455px; 
+    left: -302px;
+    top: 18px;
+    display: none;
+  }
+  #nav_cart_item_show{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 270px;
+    overflow-y: scroll;
+  }
+  #nav_cart_item_show img{
+      width: 100px;
+      height: 80px;
+  }
+  #triingle_cart {
+    height: 0px;
+    width: 0px;
+    margin-left: 314px;
+    border-left: 17px solid transparent;
+    border-bottom: 17px solid white;
+    border-right: 17px solid transparent;
+  }
+  .nav_div_third{
+    display: flex;
+    margin: 5px 0px;
+    gap: 150px;
+    font-size: 17px;
+  }
+  #nav_cart_item_show>div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px dotted black;
+    padding: 5px;
+  }
+  *{
+    margin: 0;
+  }
+  #nav_cart_item_show>div button{
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+    margin-left: 50px;
+  }
+  #nav_cart_item_show h3{
+    color: blue;
+    margin-top: 10px;
+  }
+  #padding_cart_nav{
+    padding: 15px;
+    background-color: white;
+  }
+
+  #main_serchbaar .fa-solid {
+    position:absolute;
+    right: 14px;
+}
+#view_cart_button_nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding: 10px 0px;
+    
+}
+#view_cart_button_nav button{
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+@media only screen and (max-width: 739px) {
+      #nav_serchbaar_div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+      }
+      #lishtshowbaar{
+        display: block;
+      }
+      #ctegry_list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+      #find_store_list,#navbaar_top_on_another_page{
+        position: fixed;
+        bottom: 0;
+        background-color: #e42529;
+        width: 100%;
+        justify-content: center;
+        /* display: none; */
+      }
+      #navbaar_top_on_another_page>li:nth-child(odd){
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+      }
+      #navbaar_top_on_another_page>li:nth-child(even){
+        display: none;
+      }
+  }
