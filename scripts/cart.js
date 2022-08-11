@@ -1,11 +1,4 @@
-// import {navbar} from "../component/navbar.js "
-// import {footer} from "../component/footer.js"
 
-// let navMain=document.getElementById("navMain")
-// navMain.innerHTML=navbar()
-
-// let footerMain=document.getElementById("footerMain")
-// footerMain.innerHTML=footer()
 import {navtop,main_navbaar,NEW_NAVTOP,getData,show_uersIn_nav} from "../components/navbaar.js"
 let navtopelimet = document.getElementById("top_find_store_div")
 navtopelimet.innerHTML = NEW_NAVTOP();
@@ -15,6 +8,8 @@ navbaarelimet.innerHTML = main_navbaar();
 import {footer} from "../components/footer.js"
 let footerEliment = document.getElementById("hp13");
 footerEliment.innerHTML = footer();
+
+
 let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
 console.log(cartArr)
 let listProductsDiv=document.getElementById("listCartProducts")
