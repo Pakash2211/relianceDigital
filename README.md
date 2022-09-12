@@ -35,7 +35,7 @@ Reliance Digital is an Indian electronic products website and E-commerce platfor
 
 ## Area of responsibility 
 - Lead Project and planning Task
-- Project filly functional.
+- Project fully functional.
 - Homepage is developed by me.
 
 ## Run Locally
