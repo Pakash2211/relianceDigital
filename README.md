@@ -33,6 +33,11 @@ Reliance Digital is an Indian electronic products website and E-commerce platfor
 - Manual slider for product card.
 - Add to cart opt for buying products.
 
+## Area of responsibility 
+- Lead Project and planning Task
+- Project filly functional.
+- Homepage is developed by me.
+
 ## Run Locally
 
 Clone the project
